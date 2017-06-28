@@ -107,7 +107,9 @@ class SettingsActivity : PreferenceActivity() {
             setHasOptionsMenu(true)
 
             bindPreferenceSummaryToValue(findPreference("video_upscale"))
-            bindPreferenceSummaryToValue(findPreference("video_downscale"))
+            bindPreferenceSummaryToValue(findPreference("video_downscale")
+            //bindPreferenceSummaryToValue(findPreference("video_interpolate"))
+            )
 
         }
 

@@ -75,6 +75,7 @@ internal class MPVView(context: Context, attrs: AttributeSet) : GLSurfaceView(co
                 // vo-related
                 Property("video_upscale", "scale"),
                 Property("video_downscale", "dscale"),
+                Property("video_interpolation", "interpolation"),
                 Property("video_scale_param1", "scale-param1"),
                 Property("video_scale_param2", "scale-param2")
         )
