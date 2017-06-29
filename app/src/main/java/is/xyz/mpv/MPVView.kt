@@ -95,6 +95,13 @@ internal class MPVView(context: Context, attrs: AttributeSet) : GLSurfaceView(co
         // set options
 
         MPVLib.setOptionString("vo", "opengl-cb")
+        MPVLib.setOptionString("interpolation", "yes")
+        MPVLib.setOptionString("interpolation", "interpolation")
+        MPVLib.setPropertyBoolean("interpolation", true)
+        MPVLib.setPropertyInt("interpolation", 1)
+        MPVLib.setOptionString("tscale", "mitchell")
+        MPVLib.setOptionString("opengl-swapinterval", "yes")
+        MPVLib.setOptionString("video-sync", "display")
         MPVLib.setOptionString("hwdec", hwdec)
         MPVLib.setOptionString("hwdec-codecs", "h264,hevc,mpeg4,mpeg2video,vp8,vp9")
         MPVLib.setOptionString("ao", "opensles")
